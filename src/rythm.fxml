@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rythmController">
+   <children>
+      <Button fx:id="BtnBack" mnemonicParsing="false" onAction="#HandleBtnBack" prefHeight="25.0" prefWidth="31.0" style="-fx-background-color: lightgrey;" text="&lt;-" />
+      <Button fx:id="btnStart" layoutX="253.0" layoutY="260.0" mnemonicParsing="false" onAction="#HandleBtnStart" prefHeight="45.0" prefWidth="94.0" style="-fx-background-color: lightgreen;" text="Start" />
+      <TextField fx:id="timerField" layoutX="87.0" layoutY="205.0" prefHeight="25.0" prefWidth="60.0" />
+      <TextField fx:id="timerField1" layoutX="208.0" layoutY="205.0" prefHeight="25.0" prefWidth="60.0" />
+      <TextField fx:id="timerField2" layoutX="332.0" layoutY="205.0" prefHeight="25.0" prefWidth="60.0" />
+      <Button fx:id="btnC" layoutX="87.0" layoutY="33.0" mnemonicParsing="false" onAction="#HandleBtnC" prefHeight="25.0" prefWidth="60.0" text="C" />
+      <Button fx:id="btnG" layoutX="87.0" layoutY="76.0" mnemonicParsing="false" onAction="#HandleBtnG" prefHeight="25.0" prefWidth="60.0" text="G" />
+      <Button fx:id="btnAm" layoutX="87.0" layoutY="119.0" mnemonicParsing="false" onAction="#HandleBtnAm" prefHeight="25.0" prefWidth="60.0" text="Am" />
+      <Button fx:id="btnF" layoutX="87.0" layoutY="162.0" mnemonicParsing="false" onAction="#HandleBtnF" prefHeight="25.0" prefWidth="60.0" text="F" />
+      <Button fx:id="btnC1" layoutX="208.0" layoutY="33.0" mnemonicParsing="false" onAction="#HandleBtnC1" prefHeight="25.0" prefWidth="60.0" text="C" />
+      <Button fx:id="btnG1" layoutX="208.0" layoutY="76.0" mnemonicParsing="false" onAction="#HandleBtnG1" prefHeight="25.0" prefWidth="60.0" text="G" />
+      <Button fx:id="btnAm1" layoutX="208.0" layoutY="119.0" mnemonicParsing="false" onAction="#HandleBtnAm1" prefHeight="25.0" prefWidth="60.0" text="Am" />
+      <Button fx:id="btnF1" layoutX="208.0" layoutY="162.0" mnemonicParsing="false" onAction="#HandleBtnF1" prefHeight="25.0" prefWidth="60.0" text="F" />
+      <Button fx:id="btnC2" layoutX="332.0" layoutY="33.0" mnemonicParsing="false" onAction="#HandleBtnC2" prefHeight="25.0" prefWidth="60.0" text="C" />
+      <Button fx:id="btnG2" layoutX="332.0" layoutY="76.0" mnemonicParsing="false" onAction="#HandleBtnG2" prefHeight="25.0" prefWidth="60.0" text="G" />
+      <Button fx:id="btnAm2" layoutX="332.0" layoutY="119.0" mnemonicParsing="false" onAction="#HandleBtnAm2" prefWidth="60.0" text="Am" />
+      <Button fx:id="btnF2" layoutX="332.0" layoutY="162.0" mnemonicParsing="false" onAction="#HandleBtnF2" prefWidth="60.0" text="F" />
+      <TextField fx:id="timerField3" layoutX="454.0" layoutY="205.0" prefHeight="25.0" prefWidth="60.0" />
+      <Button fx:id="btnC3" layoutX="454.0" layoutY="33.0" mnemonicParsing="false" onAction="#HandleBtnC3" prefHeight="25.0" prefWidth="60.0" text="C" />
+      <Button fx:id="btnG3" layoutX="454.0" layoutY="76.0" mnemonicParsing="false" onAction="#HandleBtnG3" prefWidth="60.0" text="G" />
+      <Button fx:id="btnAm3" layoutX="454.0" layoutY="119.0" mnemonicParsing="false" onAction="#HandleBtnAm3" prefWidth="60.0" text="Am" />
+      <Button fx:id="btnF3" layoutX="454.0" layoutY="162.0" mnemonicParsing="false" onAction="#HandleBtnF3" prefWidth="60.0" text="F" />
+      <Button fx:id="btnStop" layoutX="253.0" layoutY="324.0" mnemonicParsing="false" onAction="#HandleBtnStop" prefHeight="45.0" prefWidth="94.0" style="-fx-background-color: pink;" text="Stop" />
+      <Label alignment="CENTER" layoutX="87.0" layoutY="2.0" prefHeight="32.0" prefWidth="60.0" text="Track 1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="208.0" layoutY="2.0" prefHeight="32.0" prefWidth="60.0" text="Track 2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="332.0" layoutY="2.0" prefHeight="32.0" prefWidth="60.0" text="Track 3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="454.0" layoutY="2.0" prefHeight="32.0" prefWidth="60.0" text="Track 4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="408.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/64314990_730425437374927_5213861998357381120_n.gif" />
+         </image></ImageView>
+      <Label layoutX="14.0" layoutY="209.0" text="Interval [ms]" />
+      <Label fx:id="counterLabel" layoutX="31.0" layoutY="339.0" text="0" textFill="#7c90ff">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="counterLabel1" layoutX="75.0" layoutY="339.0" text="0" textFill="#2c68ff">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="counterLabel2" layoutX="123.0" layoutY="339.0" text="0" textFill="#222dff">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="counterLabel3" layoutX="168.0" layoutY="339.0" text="0" textFill="#00189e">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="31.0" layoutY="288.0" text="Track counters">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
